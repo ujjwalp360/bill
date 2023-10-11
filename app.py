@@ -5,7 +5,7 @@ import pandas as pd
 import streamlit as st
 # Authenticate using the JSON credentials file you downloaded
 gauth = GoogleAuth()
-gauth.LocalWebserverAuth()
+gauth.ServiceAuth("client_secrets.json")
 
 drive = GoogleDrive(gauth)
 
