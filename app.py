@@ -1,14 +1,14 @@
-import streamlit as st
- 
-st.title("Wait bro✋🏻😎")
+from flask import Flask, render_template, request
 
-# Read the PDF file in binary mode
-#with open("expt_5.pdf", "rb") as pdf_file:
-#    pdf_bytes = pdf_file.read()
+app = Flask(__name)
 
-# Provide a download button for the PDF
-#if st.button("Download PDF"):
-#    st.markdown("Downloading PDF file...")
-#    st.download_button(label="Click here if the download doesn't start", data=pdf_bytes, file_name="sample.pdf", key="pdf-download-button")
-st.markdown("you will get link here 👇🏻")
-#st.markdown("https://c6h12o6.streamlit.app
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/say_hello', methods=['POST'])
+def say_hello():
+    return "Hello, World!"
+
+if __name__ == '__main__':
+    app.run()
