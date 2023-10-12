@@ -6,6 +6,7 @@ import streamlit as st
 # Authenticate using the JSON credentials file you downloaded
 gauth = GoogleAuth()
 gauth.LocalWebserverAuth()
+st.rerun()
 drive = GoogleDrive(gauth)
 
 # Name of the folder you want to create
