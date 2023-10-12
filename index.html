@@ -1,59 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cool Website</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
 </head>
 <body>
-    <div class="container">
-        <aside class="sidebar">
-            <h2>Menu</h2>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </aside>
-        <main>
-            <header>
-                <h1>Welcome to My Cool Website</h1>
-            </header>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <section>
-                <h2>About Us</h2>
-                <p>Welcome to our cool website. We do awesome things!</p>
-            </section>
-        </main>
-    </div>
-    <footer>
-        <p>&copy; 2023 My Cool Website</p>
-    </footer>
-    <header>
-        <h1>Welcome to My Cool Website</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <p>Welcome to our cool website. We do awesome things!</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 My Cool Website</p>
-    </footer>
+    <form action="/say_hello" method="post">
+        <button type="submit" class="myButton">Click Me!</button>
+    </form>
+    <p id="outputText"></p>
 </body>
 </html>
