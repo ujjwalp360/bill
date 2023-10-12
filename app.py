@@ -5,7 +5,7 @@ st.title("Streamlit App")
 
 if st.button("Authenticate with Google"):
     # Redirect to your server for the OAuth2 authentication process
-    auth_server_url = 'http://your-server-url/oauth2callback'
+    auth_server_url = 'https://msvtidyedlqudhixir8emj.streamlit.app/oauth2callback'
     response = requests.get(auth_server_url)
     st.write("Authentication initiated. Please follow the link for OAuth2 authorization.")
 
