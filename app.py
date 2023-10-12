@@ -5,8 +5,7 @@ import pandas as pd
 import streamlit as st
 # Authenticate using the JSON credentials file you downloaded
 gauth = GoogleAuth()
-gauth.ServiceAuth("client_secrets.json")
-
+gauth.LocalWebserverAuth()
 drive = GoogleDrive(gauth)
 
 # Name of the folder you want to create
