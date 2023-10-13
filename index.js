@@ -1,3 +1,4 @@
+import '../path/to/your/styles.css';
 <!DOCTYPE html>
 <html lang="en">
   <head>
