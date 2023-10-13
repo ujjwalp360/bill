@@ -4,7 +4,6 @@ import Link from 'next/link';
 <Link href="/another-page">
   <a>Go to Another Page</a>
 </Link>
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
